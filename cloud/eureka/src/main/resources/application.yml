@@ -7,10 +7,17 @@ eureka:
   instance:
     hostname: localhost
   client:
-    fetch-registry: false
+    #æ˜¯å¦å°†è‡ªå·±æ³¨å†Œåˆ°Eurekaï¼Œé»˜è®¤ä¸ºtrue
     register-with-eureka: false
+    #æ˜¯å¦ä»Eureka Serverè·å–æ³¨å†Œä¿¡æ¯ï¼Œé»˜è®¤ä¸ºtrue
+    fetch-registry: false
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-  server: #ÅäÖÃÊôĞÔ£¬µ«ÓÉÓÚ Eureka ×ÔÎÒ±£»¤Ä£Ê½ÒÔ¼°ĞÄÌøÖÜÆÚ³¤µÄÔ­Òò£¬¾­³£»áÓöµ½ Eureka Server ²»ÌŞ³ıÒÑ¹ØÍ£µÄ½ÚµãµÄÎÊÌâ
+      #ä¸Eureka Serveräº¤äº’åœ°å€ï¼Œå¤šä¸ªç”¨ï¼Œåˆ†éš”
+      defaultZone: http://localhost:1025/eureka/
+    #å¥åº·æ£€æŸ¥
+    healthcheck:
+      enabled: true
+  server:
+    #å…³é—­è‡ªæˆ‘ä¿æŠ¤
     enable-self-preservation: false
-    eviction-interval-timer-in-ms: 5000
+
