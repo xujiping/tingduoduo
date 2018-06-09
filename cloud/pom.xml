@@ -14,7 +14,7 @@
 
     <modules>
         <module>eureka</module>
-        <module>com.rb.oauth.config-server</module>
+        <module>config-server</module>
     </modules>
 
     <!-- Spring Cloud -->

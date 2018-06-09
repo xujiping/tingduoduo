@@ -10,9 +10,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>mall</artifactId>
+    <version>1.0.0</version>
+
     <packaging>pom</packaging>
     <description>商城项目</description>
 
-    <modules></modules>
+    <modules>
+        <module>cms</module>
+    </modules>
 
 </project>
