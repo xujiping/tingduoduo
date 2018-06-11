@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.service.IService;
  * </p>
  *
  * @author xujiping
- * @since 2018-06-09
+ * @since 2018-06-11
  */
 public interface CmsUserService extends IService<CmsUser> {
 

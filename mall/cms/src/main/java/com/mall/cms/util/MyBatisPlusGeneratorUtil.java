@@ -119,7 +119,7 @@ public class MyBatisPlusGeneratorUtil {
     }
 
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/mybatis-plus?serverTimezone=GMT";
+        String url = "jdbc:mysql://localhost:3306/tingduoduo?serverTimezone=GMT";
         String username = "root";
         String password = "LiBin150530%*";
         String driverName = "com.mysql.jdbc.Driver";
@@ -127,7 +127,7 @@ public class MyBatisPlusGeneratorUtil {
         String outputDir = "D:\\Project\\tingduoduo\\mall\\cms\\src\\main\\java";
         String packageName = "com.mall.cms";
         String superEntity = "com.baomidou.mybatisplus.activerecord.Model";
-        generate(url, username, password, driverName, author, outputDir, packageName, superEntity, "cms_content");
+        generate(url, username, password, driverName, author, outputDir, packageName, superEntity, "cms_user");
         System.out.println("代码生成后，记得Entity文件导入Serializable包");
     }
 }

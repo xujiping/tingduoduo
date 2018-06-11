@@ -1,63 +1,133 @@
 package com.mall.cms.entity;
 
 import java.io.Serializable;
+import java.util.Date;
+import com.baomidou.mybatisplus.activerecord.Model;
+import com.baomidou.mybatisplus.activerecord.Model;
 
 /**
+ * <p>
+ * 
+ * </p>
  *
  * @author xujiping
- * @since 2018-06-09
+ * @since 2018-06-11
  */
-public class CmsUser extends SuperEntity<CmsUser>{
+public class CmsUser extends Model<CmsUser> {
 
     private static final long serialVersionUID = 1L;
 
-    private Long id;
-
+    private Integer id;
     /**
-     * 姓名
+     * 用户名
      */
-    private String name;
-
+    private String username;
     /**
-     * 年龄
+     * 密码
      */
-    private Integer age;
+    private String password;
+    /**
+     * 随机盐
+     */
+    private String salt;
+    /**
+     * 头像
+     */
+    private String avatar;
+    /**
+     * 创建时间
+     */
+    private Date createTime;
+    /**
+     * 更新时间
+     */
+    private Date updateTime;
+    /**
+     * 状态：0不可用 1正常
+     */
+    private Integer status;
 
-    public Long getId() {
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public Integer getAge() {
-        return age;
+    public String getPassword() {
+        return password;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    @Override
+    protected Serializable pkVal() {
+        return this.id;
     }
 
     @Override
     public String toString() {
         return "CmsUser{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                '}';
-    }
-
-    @Override
-    protected Serializable pkVal() {
-        return id;
+        "id=" + id +
+        ", username=" + username +
+        ", password=" + password +
+        ", salt=" + salt +
+        ", avatar=" + avatar +
+        ", createTime=" + createTime +
+        ", updateTime=" + updateTime +
+        ", status=" + status +
+        "}";
     }
 }

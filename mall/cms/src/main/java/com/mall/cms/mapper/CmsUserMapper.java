@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * </p>
  *
  * @author xujiping
- * @since 2018-06-09
+ * @since 2018-06-11
  */
 public interface CmsUserMapper extends BaseMapper<CmsUser> {
 

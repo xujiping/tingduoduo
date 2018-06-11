@@ -8,7 +8,7 @@ spring:
         driver-class-name: com.mysql.jdbc.Driver
         username: root
         password: LiBin150530%*
-        url: jdbc:mysql://192.168.3.163:3306/mybatis-plus?serverTimezone=GMT
+        url: jdbc:mysql://localhost:3306/tingduoduo?serverTimezone=GMT
         sql-script-encoding: UTF-8
     thymeleaf:
     #修改跳转的前缀和后缀,以下注释部分是spring boot的默认配置
