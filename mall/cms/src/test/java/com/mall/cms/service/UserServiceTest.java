@@ -1,5 +1,6 @@
 package com.mall.cms.service;
 
+import com.mall.cms.entity.CmsContent;
 import com.mall.cms.entity.CmsUser;
 import org.junit.Test;
 import org.junit.runner.RunWith;

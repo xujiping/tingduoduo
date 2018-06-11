@@ -1,6 +1,13 @@
 # 听多多项目  
 
-## 项目结构    
+## 技术  
+1. Spring Cloud  
+2. Spring boot  
+3. Mybatis plus  
+4. swagger2  
+5. druid  
+
+## 项目结构   
 ```
 tingduoduo  
 |——cloud
@@ -28,4 +35,7 @@ tingduoduo
 > http://localhost:1003  
 > 访问该地址会自动跳转到认证服务器进行授权登录，登录成功后跳转至index.html页面。
 
+
+## 项目编码  
+1. MyBatisPlusGeneratorUtil自动生成entity、mapper、service、controller等文件。  
 

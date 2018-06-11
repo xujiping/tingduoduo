@@ -4,22 +4,32 @@ import java.io.Serializable;
 
 /**
  *
- *
  * @author xujiping
  * @since 2018-06-09
  */
-public class CmsUser extends SuperEntity<CmsUser> implements Serializable {
+public class CmsUser extends SuperEntity<CmsUser>{
 
     private static final long serialVersionUID = 1L;
+
+    private Long id;
 
     /**
      * 姓名
      */
     private String name;
+
     /**
      * 年龄
      */
     private Integer age;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -40,9 +50,14 @@ public class CmsUser extends SuperEntity<CmsUser> implements Serializable {
     @Override
     public String toString() {
         return "CmsUser{" +
-                "id=" + super.getId() +
+                "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    @Override
+    protected Serializable pkVal() {
+        return id;
     }
 }
